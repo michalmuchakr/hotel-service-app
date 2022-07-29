@@ -1,8 +1,19 @@
 {
   "name": "hotel-service-app",
   "version": "0.1.0",
-  "private": true,
+  "email": "michal.mucha.kr@gmail.com",
+  "author": "Michal Mucha <michal.mucha.kr@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,9 +21,12 @@
     "@types/node": "^16.11.45",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "swiper": "^8.3.2",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -20,13 +34,39 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:coverage": "react-scripts test --collect-coverage --testPathIgnorePatterns=e2e ",
+    "test:watch": "react-scripts test --watchAll",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(swiper|ssr-window|dom7)/)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/index.tsx",
+      "!src/report-web-vitals.ts",
+      "!src/setup/custom.d.ts",
+      "!src/types/common.ts",
+      "!src/__test__/mock-data/*"
+    ]
+  },
+  "coverageThreshold": {
+    "global": {
+      "statements": 90,
+      "branches": 90,
+      "functions": 90,
+      "lines": 90
+    }
   },
   "browserslist": {
     "production": [
@@ -39,5 +79,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "axios-mock-adapter": "^1.21.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1"
   }
 }
