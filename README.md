@@ -1,5 +1,7 @@
 # Hotel Service React App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0c0c89062ce946c19eeb1c52cd36e585)](https://app.codacy.com/gh/michalmuchakr/hotel-service-app?utm_source=github.com&utm_medium=referral&utm_content=michalmuchakr/hotel-service-app&utm_campaign=Badge_Grade_Settings)
+
 Application deployed: https://hotel-service-app.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
