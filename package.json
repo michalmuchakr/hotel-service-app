@@ -34,7 +34,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage": "react-scripts test --collect-coverage --testPathIgnorePatterns=e2e ",
+    "test:coverage": "react-scripts test --collect-coverage",
     "test:watch": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "lint": "eslint .",
