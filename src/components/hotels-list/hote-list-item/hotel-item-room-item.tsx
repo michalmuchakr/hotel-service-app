@@ -1,8 +1,8 @@
 import { Flex } from '@chakra-ui/react';
 import { Divider } from '@chakra-ui/react';
+import { roomItemType } from '../../../types/common';
 import HotelItemRoomItemInfo from './hotel-item-room-item-info';
 import HotelItemRoomItemContent from './hotel-item-room-item-content';
-import { roomItemType } from '../../../types/common';
 
 const HotelItemRoomItem = ({ roomItem }: { roomItem: roomItemType }) => {
   return (

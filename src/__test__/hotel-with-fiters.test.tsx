@@ -2,8 +2,8 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { ChakraProvider } from '@chakra-ui/react';
-import App from '../app';
 import hotelsMockData from './mock-data/hotels';
+import App from '../app';
 import roomsHotelOneMockData from './mock-data/rooms-hotel-one';
 import roomHotelTwoMockData from './mock-data/rooms-hotel-two';
 

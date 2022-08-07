@@ -1,6 +1,6 @@
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { Box, Button, ButtonGroup, Flex, IconButton, Text } from '@chakra-ui/react';
 import { AddIcon, MinusIcon } from '@chakra-ui/icons';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 const CounterFilter = ({
   label,
